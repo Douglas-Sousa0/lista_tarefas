@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefas - JavaScript</title>
+</head>
+<body>
+
+    <div id="container">
+        <div>
+            <input placeholder="Digite uma tarefa" type="text" name="nome_tarefa" id="nome_tarefa">
+            <input type="date" name="data_tarefa" id="data_tarefa">
+        </div>
+
+        <button id="botao-excluir">Registrar</button>
+
+        <div id="area-tarefas">
+            
+            <div>
+                <span>Hoje</span>
+
+                <ul id="lista-hoje" class="area-tarefa">
+    
+                </ul>
+            </div>
+
+            <div>
+                <span>1 semana</span>
+
+                <ul id="lista-semana" class="area-tarefa">
+                    
+                </ul>
+            </div>
+            
+            <div>
+                <span>Mais de 1 semana</span>
+
+                <ul id="lista-mais-semana" class="area-tarefa">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
