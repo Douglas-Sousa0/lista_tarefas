@@ -66,14 +66,19 @@ function exibir_tarefas(){
         item_lista.appendChild(texto_tarefa)
         item_lista.appendChild(botao_excluir)
 
+        console.log(data_prazo - data_hoje)
+
         if(data_prazo === data_hoje){
             lista_hoje.appendChild(item_lista)
         } 
-        else if(data_prazo != data_hoje && data_prazo - data_hoje <= 604800000){ // valor em milissegundos para 1 semana
+        else if(data_prazo - data_hoje > 0 && data_prazo - data_hoje <= 604800000){ // valor em milissegundos para 1 semana
             lista_semana.appendChild(item_lista)                            
         }
-        else{
+        else if(data_prazo - data_hoje > 604800000){
             lista_mais_semana.appendChild(item_lista)
+        }
+        else{
+            return false // sem ação
         }
       
     })
