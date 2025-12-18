@@ -6,11 +6,11 @@ A divisão do prazo para encerramento das tarefas ocorre é feita em **hoje**, *
 
 <img width="1918" height="931" alt="image" src="https://github.com/user-attachments/assets/40d716b0-f4aa-44fc-8906-d50c2753b2df" />
 
-⚙️ ## Como utilizar
+# ⚙️ Como utilizar
 
 A utilização é possível apenas fazendo o download dos arquivos em uma mesma pasta e executar o arquivo .html
 
-🛠️ ** Tecnologias
+# 🛠️ Tecnologias
 
 - HTML
 - CSS
