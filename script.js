@@ -16,16 +16,25 @@ let data_hoje_milissegundos = new Date(ano_data_atual, mes_data_atual, dia_data_
 
 // ajustando pois quando o dia/mês é menor que 10 não há o 0 no início do número
 // por exemplo: estará '2' em vez de '02'
-if(dia_data_atual < 10){ 
-    dia_data_atual = `0${dia_data_atual}`
-} 
 
-if(mes_data_atual < 10){
-    mes_data_atual = `0${mes_data_atual}`
+
+function ajustar_numero(valor){
+    if(valor < 10){
+        return `0${valor}`
+    } else{
+        return valor
+    }
 }
 
-input_data.setAttribute('value',`${ano_data_atual}-${mes_data_atual + 1}-${dia_data_atual}`)
-input_data.setAttribute('min', `${ano_data_atual}-${mes_data_atual + 1}-${dia_data_atual}`)
+dia_data_atual = ajustar_numero(dia_data_atual)
+
+mes_data_atual += 1
+mes_data_atual = ajustar_numero(mes_data_atual)
+
+console.log(`${ano_data_atual}-${mes_data_atual}-${dia_data_atual}`)
+
+input_data.setAttribute('value',`${ano_data_atual}-${mes_data_atual}-${dia_data_atual}`)
+input_data.setAttribute('min', `${ano_data_atual}-${mes_data_atual}-${dia_data_atual}`)
 
 
 function adicionar_tarefas(){
