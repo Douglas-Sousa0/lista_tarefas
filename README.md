@@ -4,7 +4,7 @@ Esse é um projeto pessoal para a criação de uma lista de tarefas, assim permi
 
 A divisão do prazo para encerramento das tarefas ocorre é feita em **hoje**, **1 semana** e **mais de 1 semana**
 
-<img width="1918" height="931" alt="image" src="https://github.com/user-attachments/assets/40d716b0-f4aa-44fc-8906-d50c2753b2df" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/2ff78363-cda9-4f83-b9c5-b55d66a7d5a5" />
 
 # ⚙️ Como utilizar
 
